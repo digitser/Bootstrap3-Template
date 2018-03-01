@@ -9,7 +9,7 @@
             Adaptive Mobile-Tablet-PC
             Orange-red Static Website Template
         </title>
-        <!-- version "1.5.1.22 build 20180228.213917" -->
+        <!-- version "1.5.2.5 build 20180301.194206" -->
         <meta name="keywords" content="Batch,Full text search,Manual translate,Industry 4.0,Big data,PLM,ERP,SEO">
         <meta name="description" content="Professional research and development, design, deployment, sales _ full digital enterprise management platform / high simulation digital prototype / batch / full text search / manual translation / industry 4.0 / big data / PLM / ERP / SEO _ Copyright (c) 2017 China Guangzhou Digits Cloud Technology Co., Ltd.">
         <link rel="icon" href="images/favicon.png" type="image/png" />
@@ -22,8 +22,126 @@
         <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
+        <!-- [Online Service] -->
+        <link rel="stylesheet" href="css/index.css" type="text/css" media="screen">
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <!-- [Online Service] -->
     </head>
     <body class="">
+        <!-- Online Service Begin -->
+        <div class="service_box" style="font-family:'微软雅黑';">
+            <ul class="tab_nav">
+                <li>
+                    <a href="">
+                        <i class="icon icon_1"></i>
+                        <b>
+                            Online Service
+                        </b>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="icon icon_3"></i>
+                        <b>
+                            Weixin
+                        </b>
+                    </a>
+                </li>
+            </ul>
+            <div class="tab_content">
+                <div class="tab_plan">
+                    <p class="fs14">
+                        <b>
+                            Business Manager _ Ms. Tang
+                        </b>
+                        <br>
+                        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1721809125&amp;site=qq&amp;menu=yes">
+                            <img border="0" src="http://wpa.qq.com/pa?p=2:1721809125:51"
+                            alt="QQ online service" title="Click here to send me QQ message">
+                        </a>
+                    </p>
+                    <p class="mt10" style="font-size:12px;">
+                        Office hours (Monday to Friday)
+                        <br>10:30-12:00 14:00-17:30
+                    </p>
+                    <p class="fs14">
+                        <b>
+                            Software Sales _ Mr. Zhuo
+                        </b>
+                        <br>
+                        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1789905497&amp;site=qq&amp;menu=yes">
+                            <img border="0" src="http://wpa.qq.com/pa?p=2:1789905497:51"
+                            alt="QQ online service" title="Click here to send me QQ message">
+                        </a>
+                    </p>
+                    <p class="mt10" style="font-size:12px;">
+                        Office hours (Monday to Friday)
+                        <br>10:30-12:00 14:00-17:30
+                    </p>
+                    <p class="fs14">
+                        <b>
+                            Technology Promotion _ Mr. Liang
+                        </b>
+                        <br>
+                        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1477987636&amp;site=qq&amp;menu=yes">
+                            <img border="0" src="http://wpa.qq.com/pa?p=2:1477987636:51"
+                            alt="QQ online service" title="Click here to send me QQ message">
+                        </a>
+                    </p>
+                    <p class="mt10" style="font-size:12px;">
+                        Office hours (Monday to Friday)
+                        <br>09:00-12:00 14:00-18:30
+                    </p>
+                </div>
+                <div class="tab_plan" style="display:none;">
+                    <img src="images/weixin.jpg" width="175" height="175"
+                    alt="Official Weixin self service" title="Official Weixin self service">
+                    <p>
+                        <b>
+                            Sweep Swept Away
+                        </b>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(".service_box .tab_nav li").hover(function(){
+            var i=$(this).index();
+            $(this).addClass("active").siblings().removeClass("active");
+            $(".service_box .tab_plan:eq("+i+")").show().siblings().hide();
+            });
+            $(function(){
+            var t;
+            $(".service_box").hover(function(){
+            $(".service_box").animate({right:0},300)
+            clearTimeout(t);
+            },function(){
+            t=setTimeout(function(e){
+            $(".service_box").animate({right:"-250px"},300);
+            $(".service_box").find(".tab_nav li").removeClass("active");
+            },1000);
+            });
+            });
+            var isTransition=true;
+            $(".m_logo").hover(function(){
+            var r=0;
+            if(isTransition){
+            animateTime = setInterval(function(){
+            if (r>=153){
+            clearInterval(animateTime);
+            isTransition=true;
+            }else{
+            isTransition=false;
+            r++;
+            $(".m_logo a").attr("style","-webkit-mask:-webkit-gradient(radial, 45 25, "+r+", 45 25, "+(r+15)+", from(rgb(0, 0, 0)), color-stop(0.5, rgba(0, 0, 0, 0.2)), to(rgb(0, 0, 0)));")
+            };
+            },5);
+            }
+            },function(){
+            return;
+            });
+        </script>
+        <!-- Online Service End -->
         <div class="navbar navbar-default navbar-static-top" style="font-family:'微软雅黑';background:#ff552d;">
             <div class="container">
                 <div class="row" style="padding-top:12px;padding-bottom:2px;font-size:12px;">
@@ -112,12 +230,6 @@
                                             </li>
                                             <li class="divider"></li>
                                             <li>
-                                                <a target="_blank" href="http://dts.digitser.cn/en-US/app/compare/index.html" style="text-indent:1em;">
-                                                    └ Data Compare
-                                                </a>
-                                            </li>
-                                            <li class="divider"></li>
-                                            <li>
                                                 <a target="_blank" href="http://dts.digitser.cn/en-US/ide/index.html" style="color:#2f7dc5;">
                                                     <b>
                                                         ├ Integrated Development Environment (IDE)
@@ -135,11 +247,6 @@
                                             </li>
                                             <li class="divider"></li>
                                             <li>
-                                                <a target="_blank" href="http://dts.digitser.cn/en-US/plugin/index.html" style="color:#2f7dc5;">
-                                                    <b>
-                                                        ├ Plugin
-                                                    </b>
-                                                </a>
                                                 <a target="_blank" href="http://dts.digitser.cn/en-US/gadget/index.html" style="color:#2f7dc5;">
                                                     <b>
                                                         ├ Gadget
@@ -149,15 +256,6 @@
                                                     <b>
                                                         └ Applet
                                                     </b>
-                                                </a>
-                                                <a target="_blank" href="http://dts.digitser.cn/en-US/applet/ftsearch/index.html" style="text-indent:1em;">
-                                                    ├ Full Text Search
-                                                </a>
-                                                <a target="_blank" href="http://dts.digitser.cn/en-US/applet/ft_repl/index.html" style="text-indent:1em;">
-                                                    ├ Full Text Replace
-                                                </a>
-                                                <a target="_blank" href="http://dts.digitser.cn/en-US/applet/ws_dlinkg/index.html" style="text-indent:1em;">
-                                                    └ Dead Link Detect
                                                 </a>
                                             </li>
                                         </ul>

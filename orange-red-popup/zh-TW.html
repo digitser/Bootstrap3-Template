@@ -9,7 +9,7 @@
             自適應手機-平闆-PC
             橙紅靜態網站模闆
         </title>
-        <!-- version "1.5.1.20 build 20180228.213917" -->
+        <!-- version "1.5.2.4 build 20180301.194303" -->
         <meta name="keywords" content="批處理,全文搜索,人工翻譯,工業4.0,大數據,PLM,ERP,SEO">
         <meta name="description" content="專業研發、設計、部署、銷售 _ 全數字化企業管理平颱 / 高仿真數字樣機 / 批處理 / 全文搜索 / 人工翻譯 / 工業4.0 / 大數據 / PLM / ERP / SEO _ 版權所有 (c) 2017 廣州市德雲數科技有限公司">
         <link rel="icon" href="images/favicon.png" type="image/png" />
@@ -22,8 +22,126 @@
         <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
+        <!-- [Online Service] -->
+        <link rel="stylesheet" href="css/index.css" type="text/css" media="screen">
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <!-- [Online Service] -->
     </head>
     <body class="">
+        <!-- Online Service Begin -->
+        <div class="service_box" style="font-family:'微软雅黑';">
+            <ul class="tab_nav">
+                <li>
+                    <a href="">
+                        <i class="icon icon_1"></i>
+                        <b>
+                            在綫客服
+                        </b>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="icon icon_3"></i>
+                        <b>
+                            微信
+                        </b>
+                    </a>
+                </li>
+            </ul>
+            <div class="tab_content">
+                <div class="tab_plan">
+                    <p class="fs14">
+                        <b>
+                            業務經理 _ 唐女士
+                        </b>
+                        <br>
+                        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1721809125&amp;site=qq&amp;menu=yes">
+                            <img border="0" src="http://wpa.qq.com/pa?p=2:1721809125:51"
+                            alt="QQ在綫客服" title="點這裏給我發QQ消息">
+                        </a>
+                    </p>
+                    <p class="mt10" style="font-size:12px;">
+                        上班時間 (星期一至星期五)
+                        <br>10:30-12:00 14:00-17:30
+                    </p>
+                    <p class="fs14">
+                        <b>
+                            軟件銷售 _ 卓先生
+                        </b>
+                        <br>
+                        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1789905497&amp;site=qq&amp;menu=yes">
+                            <img border="0" src="http://wpa.qq.com/pa?p=2:1789905497:51"
+                            alt="QQ在綫客服" title="點這裏給我發QQ消息">
+                        </a>
+                    </p>
+                    <p class="mt10" style="font-size:12px;">
+                        上班時間 (星期一至星期五)
+                        <br>10:30-12:00 14:00-17:30
+                    </p>
+                    <p class="fs14">
+                        <b>
+                            技術推廣 _ 梁先生
+                        </b>
+                        <br>
+                        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1477987636&amp;site=qq&amp;menu=yes">
+                            <img border="0" src="http://wpa.qq.com/pa?p=2:1477987636:51"
+                            alt="QQ在綫客服" title="點這裏給我發QQ消息">
+                        </a>
+                    </p>
+                    <p class="mt10" style="font-size:12px;">
+                        上班時間 (星期一至星期五)
+                        <br>09:00-12:00 14:00-18:30
+                    </p>
+                </div>
+                <div class="tab_plan" style="display:none;">
+                    <img src="images/weixin.jpg" width="175" height="175"
+                    alt="官方微信自助客服" title="官方微信自助客服">
+                    <p>
+                        <b>
+                            掃一掃
+                        </b>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(".service_box .tab_nav li").hover(function(){
+            var i=$(this).index();
+            $(this).addClass("active").siblings().removeClass("active");
+            $(".service_box .tab_plan:eq("+i+")").show().siblings().hide();
+            });
+            $(function(){
+            var t;
+            $(".service_box").hover(function(){
+            $(".service_box").animate({right:0},300)
+            clearTimeout(t);
+            },function(){
+            t=setTimeout(function(e){
+            $(".service_box").animate({right:"-250px"},300);
+            $(".service_box").find(".tab_nav li").removeClass("active");
+            },1000);
+            });
+            });
+            var isTransition=true;
+            $(".m_logo").hover(function(){
+            var r=0;
+            if(isTransition){
+            animateTime = setInterval(function(){
+            if (r>=153){
+            clearInterval(animateTime);
+            isTransition=true;
+            }else{
+            isTransition=false;
+            r++;
+            $(".m_logo a").attr("style","-webkit-mask:-webkit-gradient(radial, 45 25, "+r+", 45 25, "+(r+15)+", from(rgb(0, 0, 0)), color-stop(0.5, rgba(0, 0, 0, 0.2)), to(rgb(0, 0, 0)));")
+            };
+            },5);
+            }
+            },function(){
+            return;
+            });
+        </script>
+        <!-- Online Service End -->
         <div class="navbar navbar-default navbar-static-top" style="font-family:'微软雅黑';background:#ff552d;">
             <div class="container">
                 <div class="row" style="padding-top:12px;padding-bottom:2px;font-size:12px;">
@@ -112,12 +230,6 @@
                                             </li>
                                             <li class="divider"></li>
                                             <li>
-                                                <a target="_blank" href="http://dts.digitser.cn/zh-TW/app/compare/index.html" style="text-indent:1em;">
-                                                    └ 數據比較
-                                                </a>
-                                            </li>
-                                            <li class="divider"></li>
-                                            <li>
                                                 <a target="_blank" href="http://dts.digitser.cn/zh-TW/ide/index.html" style="color:#2f7dc5;">
                                                     <b>
                                                         ├ IDE 集成開發環境
@@ -135,11 +247,6 @@
                                             </li>
                                             <li class="divider"></li>
                                             <li>
-                                                <a target="_blank" href="http://dts.digitser.cn/zh-TW/plugin/index.html" style="color:#2f7dc5;">
-                                                    <b>
-                                                        ├ 插件
-                                                    </b>
-                                                </a>
                                                 <a target="_blank" href="http://dts.digitser.cn/zh-TW/gadget/index.html" style="color:#2f7dc5;">
                                                     <b>
                                                         ├ 小工具
@@ -149,15 +256,6 @@
                                                     <b>
                                                         └ 小程序
                                                     </b>
-                                                </a>
-                                                <a target="_blank" href="http://dts.digitser.cn/zh-TW/applet/ftsearch/index.html" style="text-indent:1em;">
-                                                    ├ 全文搜索
-                                                </a>
-                                                <a target="_blank" href="http://dts.digitser.cn/zh-TW/applet/ft_repl/index.html" style="text-indent:1em;">
-                                                    ├ 全文替換
-                                                </a>
-                                                <a target="_blank" href="http://dts.digitser.cn/zh-TW/applet/ws_dlinkg/index.html" style="text-indent:1em;">
-                                                    └ 死鏈檢測
                                                 </a>
                                             </li>
                                         </ul>

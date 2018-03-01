@@ -1,0 +1,20 @@
+/*在线服务*/
+.service_box{position:fixed; z-index:1000;right:-250px;top:50%;margin-top:-85px;width:249px;border:1px solid #ece8e5; background:#fff; }
+.service_box .tab_nav{padding:0px;position:absolute;left:-46px;top:-1px;}
+.service_box .tab_nav > li {list-style:none;background:#457ce6;border-bottom:2px solid #dfdbd9;}
+.service_box .tab_nav > li.active{list-style:none;background:#ff6b09;}
+.service_box .tab_nav > li:first-child{border-radius:5px 0 0;}
+.service_box .tab_nav > li:last-child{ border-bottom:none; border-radius:0 0 0 5px;}
+.service_box .tab_nav > li > a{ display:block; width:46px;padding:9px 6px 9px 8px; line-height:20px; text-align:center;color:#f2f6fc; text-decoration:none;}
+.service_box .tab_nav > li.active > a{ color:#fff;}
+.service_box .tab_nav .icon{ display:block; height:28px;width:28px; background:url(images/bg_online_service_new.gif) no-repeat; overflow:hidden;margin:3px 0;*margin:6px 0;}
+.service_box .tab_nav .icon_1{ background-position:0 0 ;}
+.service_box .tab_nav .icon_2{ background-position:-28px 0 ;}
+.service_box .tab_nav .icon_3{ background-position:-56px 0 ;}
+.service_box .tab_nav .active .icon_1{ background-position:0 -28px ;}
+.service_box .tab_nav .active .icon_2{ background-position:-28px -28px ;}
+.service_box .tab_nav .active .icon_3{ background-position:-56px -28px ;}
+.service_box .tab_content{padding:20px 5px 10px; position:relative;}
+.service_box .tab_plan{ display:none; text-align:center;}
+.service_box .tab_plan p{font-size:1em; padding:0; color:#333;}
+
